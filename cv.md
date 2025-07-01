@@ -42,7 +42,6 @@ export const getPasswordHash = (password: string) => {
       }}
     >
       {idea.isLikedByMe ? 'Unlike' : 'Like'}
-      <Icon size={32} className={css.likeIcon} name={idea.isLikedByMe ? 'likeEmpty' : 'likeFilled'} />
     </button>
 ```
 
