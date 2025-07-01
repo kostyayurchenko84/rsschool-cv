@@ -8,7 +8,7 @@
 ---
 
 ## About Me
-_I am an engineer, that wants to learn and grow in the field of programming. I have got analytical skills, responsibility, quick to adapt, diligence. Now, I have a basic foundation in web development, I haven't worked in any development project.. I am committed to continuous learning and trying to apply new knowledge practically._
+_I am an engineer, that wants to learn and grow in the field of programming. I have got analytical skills, responsibility, quick to adapt, diligence. Now, I have a basic foundation in web development, I haven't worked in any development project. I am committed to continuous learning and trying to apply new knowledge practically._
 
 ---
 
