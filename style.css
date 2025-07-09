@@ -1,33 +1,40 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Oswald", sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-h1, h2, h3 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-h1{
+h1 {
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -47,30 +54,49 @@ h3 {
   line-height: 50px;
 }
 nav ul {
-    gap: 20px;
+  gap: 20px;
 }
 
 ul span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a {
-    text-decoration: none;          
-    color: #007BFF;                 
-    cursor: pointer;  
-    transition: color 0.3s;                
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 a:hover {
-    color: #0056b3;                
+  color: #0056b3;
 }
 
 a:active {
-    color: #ff4d4d;                 
+  color: #ff4d4d;
 }
 
-
-.header, .footer {
-border: 1px solid red;
+.header,
+.footer {
+  border: 1px solid red;
+}
+.footer {
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-rs-logo {
+  width: 50px;
+  height: auto;
+}
