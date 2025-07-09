@@ -19,6 +19,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.divider {
+    border: 0;
+    height: 3px;
+    background: #000; 
+    margin: 5px 0px;
+}
+
 h1,
 h2,
 h3 {
@@ -40,9 +53,10 @@ h2 {
 h3 {
   font-weight: 400;
 }
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -55,9 +69,12 @@ h3 {
 }
 nav ul {
   gap: 20px;
-}
 
-ul span {
+}
+.container ul {
+padding-left: 25px;
+}
+span {
   font-weight: bold;
 }
 
@@ -75,6 +92,20 @@ a:hover {
 a:active {
   color: #ff4d4d;
 }
+
+pre {
+    background-color: #2d2d2d; 
+    color: #ffffff;             
+    padding: 0 0;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    overflow-x: auto; 
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
 
 .header,
 .footer {
