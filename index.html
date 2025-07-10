@@ -22,7 +22,7 @@
                     <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    <li class="nav-item"><a href="#language" class="nav-link">English</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,23 +65,26 @@
                 <hr class="divider">
                 <h3>React Function:</h3>
                 <pre>
-                    <code>import crypto from 'crypto'
+                    <code>
+                        import crypto from 'crypto'
                         import { env } from '../lib/env'
                         export const getPasswordHash = (password: string) => {
-                        //console.info(password)
-                        //console.info(crypto.createHash('sha256').update(password).digest('hex'))
-                        return crypto.createHash('sha256').update(`${env.PASSWORD_SALT}${password}`).digest('hex')
-                        }</code>
+                            //console.info(password)
+                            //console.info(crypto.createHash('sha256').update(password).digest('hex'))
+                            return crypto.createHash('sha256').update(`${env.PASSWORD_SALT}${password}`).digest('hex')
+                        }
+                    </code>
                 </pre>
                 <h3>Other code example:</h3>
                 <pre>
-                    <code>button
-                            className={css.likeButton}
+                    <code>
+                        button className={css.likeButton}
                             onClick={() => {
                                 void setIdeaLike.mutateAsync({ ideaId: idea.id, isLikedByMe: !idea.isLikedByMe })
                             }}
                             {idea.isLikedByMe ? 'Unlike' : 'Like'}
-                          /button</code>
+                        /button
+                        </code>
                 </pre>
             </section>
             <section id="projects">
