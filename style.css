@@ -111,11 +111,6 @@ pre {
     max-width: 100%;
 }
 
-
-.header,
-.footer {
-  border: 1px solid red;
-}
 .footer {
   padding: 10px 0;
   text-align: center;
