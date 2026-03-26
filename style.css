@@ -38,11 +38,59 @@ h2 {
   margin-bottom: 5px;
 }
 
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 20px 0 8px 0;
+  padding-left: 12px;
+  border-left: 3px solid #3498db;
+}
+
 a {
   text-decoration: none;
-  color: white;
   cursor: pointer;
+  color: #3498db;
   transition: color 0.5s;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li {
+  padding: 8px 30px;
+  display: flex;
+  position: relative;
+}
+
+.section li::before {
+  content: '■';
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #3498db;
+  font-size: 16px;
+}
+
+.section li span {
+  min-width: 70px;
+}
+
+.section li a {
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.section li a:hover {
+  color: #007bff;
+}
+
+span {
+  font-weight: bold;
 }
 
 .header,
@@ -52,7 +100,7 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -61,17 +109,21 @@ a {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-link {
   display: inline-block;
-  padding: 5px 10px;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
   transition: background-color 1s;
+  border-radius: 6px;
 }
 
 .nav-link:hover,
 .nav-link.active {
+  color: white;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -83,7 +135,7 @@ a {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
 }
 
-.section-title {
+.section-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,8 +143,41 @@ a {
   margin: 20px 0;
 }
 
-.header,
-.main,
+.section-title {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+code {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  background-color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0 0 16px 0;
+  padding: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease;
+}
+
 .footer {
   border: 1px solid red;
 }
