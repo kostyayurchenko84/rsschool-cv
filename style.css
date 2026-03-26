@@ -13,10 +13,10 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #f0f0f0;
   color: #333;
 }
 
@@ -33,18 +33,18 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
   margin-top: 40px;
   margin-bottom: 5px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #2c3e50;
   margin-top: 20px 0 8px 0;
   padding-left: 12px;
   border-left: 3px solid #3498db;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
 }
 
 a {
@@ -55,15 +55,15 @@ a {
 }
 
 .section ul {
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .section li {
-  padding: 8px 30px;
   display: flex;
   position: relative;
+  padding: 8px 30px;
 }
 
 .section li::before {
@@ -112,19 +112,22 @@ span {
   gap: 6px;
 }
 
-.nav-link {
+.nav-link,
+.footer a {
   display: inline-block;
-  color: white;
-  padding: 12px;
-  font-size: 18px;
-  transition: background-color 1s;
+  padding: 8px;
   border-radius: 6px;
+  font-size: 18px;
+  color: white;
+  transition: background-color 1s;
 }
 
 .nav-link:hover,
-.nav-link.active {
-  color: white;
+.nav-link.active,
+.footer a:hover,
+.footer a.active {
   background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .avatar {
@@ -144,18 +147,18 @@ span {
 }
 
 .section-title {
-  border-bottom: 2px solid #3498db;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
 }
 
 pre {
   background-color: #1e1e1e;
-  color: #d4d4d4;
   border-radius: 8px;
   font-family: 'Courier New', monospace;
   font-size: 16px;
   line-height: 1.5;
+  color: #d4d4d4;
   overflow-x: auto;
   white-space: pre-wrap;
 }
@@ -167,17 +170,44 @@ code {
 }
 
 p {
+  margin: 0 0 16px 0;
+  padding: 12px;
   background-color: white;
   border-radius: 8px;
   font-size: 18px;
   line-height: 1.5;
   color: #555;
-  margin: 0 0 16px 0;
-  padding: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease;
 }
 
 .footer {
-  border: 1px solid red;
+  padding: 10px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-rs-logo {
+  width: 50px;
+  height: auto;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }
