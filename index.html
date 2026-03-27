@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV#3. CV. Cross-Check</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#language" class="nav-link">English</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section-header">
+          <img class="avatar" src="./avatar_image.jpg" alt="avatar_image" />
+          <h1>Kanstantsin Yurchenko</h1>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul>
+            <li><span>Email:</span><a href="mailto:kostyayurchenko84@gmail.com">kostyayurchenko84@gmail.com</a></li>
+            <li><span>Phone:</span>+375291234567</li>
+            <li><span>Github:</span><a href="https://github.com/kostyayurchenko84">kostyayurchenko84</a></li>
+          </ul>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            An aspiring developer with an engineering background, eager to grow in the field of frontend web
+            development. Possesses analytical thinking, adaptability, diligence, and a strong sense of responsibility.
+            Currently has a solid foundation in web development fundamentals and is committed to continuous learning,
+            actively applying new knowledge through practical projects.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>Delphi, Javascript, HTML, CSS</li>
+            <li>React.js, Node.js</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>VS Code, DBeaver, Docker</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code</h2>
+          <h3>React Function:</h3>
+          <pre>
+            <code>
+                import crypto from 'crypto'
+                import { env } from '../lib/env'
+                export const getPasswordHash = (password: string) => {
+                      //console.info(password)
+                    //console.info(crypto.createHash('sha256').update(password).digest('hex'))
+                    return crypto.createHash('sha256').update(`${env.PASSWORD_SALT}${password}`).digest('hex')
+                }
+            </code>
+          </pre>
+          <h3>Other code example:</h3>
+          <pre>
+            <code>
+              button className={css.likeButton}
+                  onClick={() => {
+                        void setIdeaLike.mutateAsync({ ideaId: idea.id, isLikedByMe: !idea.isLikedByMe })
+                  }}
+                  {idea.isLikedByMe ? 'Unlike' : 'Like'}
+              /button
+            </code>
+          </pre>
+        </section>
+        <section class="section" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <h3>Louvre Museum website</h3>
+          <p>
+            <span>Skills used:</span> HTML, CSS, JavaScript, <br />
+            Created a responsive website of Louvre museum featuring adaptive design, interactive map, image slider and
+            gallery navigation.
+          </p>
+          <h3>Meals shop (Educational Project)</h3>
+          <p>
+            <span>Skills used:</span> React, HTML, CSS, JavaScript, SQL <br />
+            Created a responsive website to order meals.
+          </p>
+          <h3>Meeting Management App (Educational Project)</h3>
+          <p>
+            <span>Skills used:</span> React.js, JavaScript, HTML, CSS, SQL <br />
+            Built a simple meeting management application allowing users to add, edit, and delete events.
+          </p>
+          <h3>IdeaNick fullstack app (Educational Project)</h3>
+          <p>
+            <span>Skills used:</span> JavaScript, React, CSS, Prisma, SQL, Github <br />
+            Developed a react app for adding and storing excellent ideas ).
+          </p>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li><span>Belorussian state univercity of transport</span>, Gomel, Belarus, 2007</li>
+            <li><span>React - The Complete Guide 2025 (incl. Next.js, Redux) (Udemy)</span>, 2025</li>
+            <li><span>Full-stack web service development from scratch using TypeScript, React, Node.js</span>, 2025</li>
+            <li><span>Java Fullstack (Javarush)</span>, 2021</li>
+          </ul>
+        </section>
+        <section class="section" id="language">
+          <h2 class="section-title">Language</h2>
+          <p>
+            <span>English:</span> Intermediate (B1). I practice reading technical articles and watching tutorials in
+            English regularly. I can read and understand technical documentation and communicate on basic professional
+            topics.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img class="footer-rs-logo" src="./assets/rss-logo.svg" alt="rss-logo" />
+            <p><a href="https://rs.school/courses/javascript-preschool-ru">JS / Front-end Pre-school RU Course</a></p>
+          </div>
+          <p>© 2026 <a href="https://kostyayurchenko84.github.io/rsschool-cv/">Kanstantsin Yurchenko</a></p>
+        </div>
+        <p>Last updated: 2026-27-03</p>
+      </div>
+    </footer>
+  </body>
+</html>
